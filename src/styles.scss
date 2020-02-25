@@ -15,45 +15,27 @@ img {
   padding-top: 0;
 }
 
-// Background Images
-// .bg-container {
-//   width: 1480px;
-//   height: 855px;
-//   overflow: hidden;
-//   transform-style: preserve-3d;
-//   position: relative;
-//   top: 0;
-//   right: 0;
-// }
-
-@media (min-width: 1280px) {
-  .menu-bg {
-    width: 1600px;
-    height: 900px;
-  }
-  .menu-bg-inner {
-    width: 1800px;
-    height: 1040px;
-  }
+.bg-container {
+  height: 100vh;
 }
 
-@media (min-width: 960px) {
-  .bg-container {
-    min-height: 0;
-    overflow: hidden;
-    position: relative;
-  }
-  .section {
-    height: 100vh;
-  }
-}
-
-.menu-bg,
 .menu-bg-inner {
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+
+.menu-bg-show {
+  width: 1480px;
+  height: 855px;
+}
+
+.menu-bg-inner,
+.menu-bg-show {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
 }
 
 // .bg-layer {
@@ -65,76 +47,144 @@ img {
 //   left: 0;
 // }
 
-// .bg-coast {
-//   z-index: 2;
-//   transform-style: preserve-3d;
-//   height: 100%;
-//   width: 100%;
-//   img {
-//     position: relative;
-//     bottom: -150px;
-//     left: -100px;
-//     height: 100%;
-//     width: 100%;
-//   }
-// }
-
-// .bg-sky {
-//   z-index: 1;
-//   transform-style: preserve-3d;
-//   height: 100%;
-//   width: 100%;
-//   img {
-//     position: relative;
-//     height: 1200px;
-//     width: 100%;
-//     top: -150px;
-//     left: -40px;
-//   }
-// }
-
-// .bg-ground {
-//   z-index: 4;
-//   transform-style: preserve-3d;
-//   position: absolute;
-//   bottom: 0 !important;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   img {
-//     position: relative;
-//     width: 110%;
-//     height: 120%;
-//     bottom: 0;
-//   }
-// }
-
-// .bg-ship {
-//   z-index: 3;
-//   transform-style: preserve-3d;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   img {
-//     position: relative;
-//     height: 100%;
-//     top: -150px;
-//   }
-// }
-
-.hero-tracer {
+.bg-coast {
+  z-index: 2;
   transform-style: preserve-3d;
-  position: absolute;
-  bottom: -180px;
-  left: -180px;
   height: 100%;
   width: 100%;
   img {
-    // height: 100%;
-    height: 90%;
-    width: 60%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+}
+
+.bg-sky {
+  z-index: 1;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.bg-ground {
+  z-index: 4;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.bg-ship {
+  z-index: 3;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 60%;
+  img {
+    position: absolute;
+    top: 0px;
+    left: 20%;
+  }
+}
+
+.tracer-link {
+  position: absolute;
+  bottom: 0;
+  z-index: 6;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-tracer {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  height: 70%;
+  width: 40%;
+}
+
+.tracer-fx {
+  z-index: 6;
+  position: absolute;
+  top: 35.5%;
+  left: -5%;
+  height: 100px;
+  width: 100px;
+}
+
+.enemy {
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+.enemy-bot {
+  position: absolute;
+  bottom: 20%;
+  right: 19%;
+}
+
+.lucio-wrapper {
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+}
+
+.lucio {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+}
+
+@media (min-width: 960px) {
+  .menu-bg {
+    min-height: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .section {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-bg-show {
+    width: 1800px;
+    height: 1040px;
+  }
+  .menu-bg-inner {
+    width: 1600px;
+    height: 900px;
+  }
+  .lucio {
+    top: 10%;
+    right: 1%;
+  }
+  .hero-tracer {
+    bottom: 0;
+    left: 0;
+  }
+  .tracer-fx {
+    left: -1%;
+    top: 33.2%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .menu-bg-show {
+    width: 2760px;
+    height: 1594px;
+  }
+  .menu-bg-inner {
+    width: 2560px;
+    height: 1440px;
   }
 }

@@ -1,30 +1,35 @@
-import React, { useState } from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExploreBackground from "../components/explore/ExploreBackground"
 import Tracer from "../components/explore/Tracer"
+import Parallax from "parallax-js"
+import Enemy from "../components/explore/Enemy"
+import Lucio from "../components/explore/Lucio"
 
 const ExplorePage = () => {
-  const [clientX, setClientX] = useState(0)
-  const [clientY, setClientY] = useState(0)
+  useEffect(() => {
+    const parallax = document.getElementById("parallax")
+    const parallaxInstance = new Parallax(parallax)
+  }, [])
 
-  const mouseMove = e => {
-    setClientX(e.clientX / 100 - 10)
-    setClientY(e.clientY / 100 - 10)
-  }
   return (
     <Layout>
       <SEO title="explore" />
       <div>
-        <div style={{ height: "100vh" }}>
-          <div className="bg-container section">
-            <div className="menu-bg">
+        <div className="bg-container ">
+          <main>
+            <div className="menu-bg section">
               <div className="menu-bg-inner">
-                <ExploreBackground clientX={clientX} clientY={clientY} />
-                <Tracer clientX={clientX} clientY={clientY} />
+                <div className="menu-bg-show" id="parallax">
+                  <ExploreBackground />
+                  <Tracer />
+                  <Enemy />
+                  <Lucio />
+                </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </div>
     </Layout>
