@@ -18,7 +18,7 @@ const Tracer = ({ darken, setDarken }) => {
       <div className="hero-tracer">
         <img src={tracer} />
         <Link
-          href="/team-vs-team"
+          to="/team-vs-team"
           className="explore-link"
           onPointerEnter={() => setDarken({ ["tracer"]: true })}
           onPointerLeave={() => setDarken({})}

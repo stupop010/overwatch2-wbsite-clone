@@ -409,6 +409,16 @@ img {
   transition: filter 0.3s linear;
 }
 
+.co-op-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 100vh;
+  div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @keyframes scrollOut {
   from {
     width: 0;

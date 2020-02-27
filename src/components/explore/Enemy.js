@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import has from "lodash.has"
 import ExploreButton from "./ExploreButton"
 import enemy from "../../images/menu-bot-main-LG.png"
@@ -12,8 +13,8 @@ const Enemy = ({ setDarken, darken }) => {
       <div style={{ width: "21%" }}>
         <div className="enemy-bot">
           <img src={enemy} />
-          <a
-            href="/team-vs-team"
+          <Link
+            to="/explore/co-op-missions"
             className="explore-link"
             onPointerEnter={() => setDarken({ ["enemy"]: true })}
             onPointerLeave={() => setDarken({})}
@@ -24,7 +25,7 @@ const Enemy = ({ setDarken, darken }) => {
               ifDarken={ifDarken}
               className="enemy-btn"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
