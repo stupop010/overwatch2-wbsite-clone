@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import bgSky from "../../images/menu-bg-sky-LG.jpg"
 import bgCoast from "../../images/menu-bg-coast-LG.png"
 import bgGround from "../../images/menu-bg-ground-LG.png"
