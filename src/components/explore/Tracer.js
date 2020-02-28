@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import has from "lodash.has"
+
 import tracer from "../../images/menu-hero-tracer-LG.png"
 import tracerFx from "../../images/menu-hero-tracer-fx-LG.png"
 import "../../styles.scss"
 import ExploreButton from "./ExploreButton"
-import { Link } from "gatsby"
 
 const Tracer = ({ darken, setDarken }) => {
   const ifDarken = has(darken, "tracer")

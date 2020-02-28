@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react"
+import Parallax from "parallax-js"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExploreBackground from "../components/explore/ExploreBackground"
-import ExploreOverlay from "../components/explore/ExploreOverlay"
-import ExploreNavOverlay from "../components/explore/ExploreNavOverlay"
-import Tracer from "../components/explore/Tracer"
-import Parallax from "parallax-js"
-import Enemy from "../components/explore/Enemy"
-import Lucio from "../components/explore/Lucio"
+import ExploreBackground from "../components/Explore/ExploreBackground"
+import ExploreOverlay from "../components/Explore/ExploreOverlay"
+import ExploreNavOverlay from "../components/Explore/ExploreNavOverlay"
+import Tracer from "../components/Explore/Tracer"
+import Enemy from "../components/Explore/Enemy"
+import Lucio from "../components/Explore/Lucio"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})

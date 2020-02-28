@@ -104,87 +104,94 @@ img {
   height: 100%;
   width: 100%;
   pointer-events: none;
-  .overwatch-logo {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 2%;
-    left: 2%;
-    .title {
-      margin-left: 1rem;
-      position: relative;
-      text-align: center;
-      padding: 0.6rem 1rem;
-      font-size: 1.4rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: white;
-      border-left: 1px solid rgba($color: #ffffff, $alpha: 0.4);
-    }
-  }
-  .logo {
-    svg {
-      pointer-events: all;
-      height: 6rem;
-      width: 6rem;
-    }
-  }
+}
 
-  .overwatch-menu {
-    position: absolute;
-    top: 3%;
-    right: 2%;
-    a {
-      background: transparent;
-      border: none;
-      pointer-events: all;
-      &:hover {
-        cursor: pointer;
-        filter: brightness(1.4);
-        &:before {
-          content: "vist playoverwatch.com";
-          position: absolute;
-          top: -45%;
-          right: -190%;
-          font-size: 1rem;
-          font-weight: 400;
-          text-transform: uppercase;
-          color: white;
-          width: 24rem;
-          animation: menuScroll 0.7s;
-        }
-      }
-      svg {
-        fill: white;
-      }
-    }
-  }
+.overwatch-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 2%;
+}
 
-  .overwatch-story {
-    position: absolute;
-    left: 47%;
-    bottom: 4%;
-    transform: translate(0, -47%);
-    color: white;
+.title {
+  margin-left: 1rem;
+  position: relative;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  border-left: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+}
+
+.logo {
+  svg {
     pointer-events: all;
-    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s;
+  }
+}
+
+.overwatch-menu {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  a {
+    background: transparent;
+    border: none;
+    pointer-events: all;
     &:hover {
-      p {
-        transform: scale(1.3) rotate(90deg);
+      cursor: pointer;
+      filter: brightness(1.4);
+      &:before {
+        content: "vist playoverwatch.com";
+        position: absolute;
+        top: -45%;
+        right: -190%;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+        width: 24rem;
+        animation: menuScroll 0.7s;
       }
     }
-    h4 {
-      font-size: 1.4rem;
-      text-transform: uppercase;
+    svg {
+      fill: white;
     }
+  }
+}
+
+.overwatch-story {
+  position: absolute;
+  left: 47%;
+  bottom: 4%;
+  transform: translate(0, -47%);
+  color: white;
+  pointer-events: all;
+  cursor: pointer;
+  &:hover {
     p {
-      position: absolute;
-      transform: rotate(90deg);
-      font-size: 1.3rem;
-      left: 43%;
-      top: 100%;
-      pointer-events: all;
+      transform: scale(1.3) rotate(90deg);
     }
+  }
+  h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  p {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 1.3rem;
+    left: 43%;
+    top: 100%;
+    pointer-events: all;
   }
 }
 
@@ -413,10 +420,83 @@ img {
   display: grid;
   grid-template-columns: 45% 55%;
   height: 100vh;
-  div {
+  .do {
     height: 100%;
     width: 100%;
   }
+  .co-op-logo {
+    height: 4rem;
+    padding: 2rem 0 0 1rem;
+  }
+  .title {
+    font-size: 1.3rem;
+    color: black;
+    border-color: black;
+  }
+}
+
+.co-op-content {
+  padding: 5rem 4rem;
+  h1 {
+    font-style: italic;
+    line-height: 1;
+  }
+}
+
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  background: #181818;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  outline: none;
+  border-radius: 2px;
+  text-align: left;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+    background: #000000;
+    transition: transform 0.3s;
+  }
+}
+
+.active {
+  background: #000000;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 8px solid #ef6437;
+    height: 100%;
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.accordion-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.accordion-section {
+  background: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.accordion-text {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1.1rem 0;
 }
 
 @keyframes scrollOut {
