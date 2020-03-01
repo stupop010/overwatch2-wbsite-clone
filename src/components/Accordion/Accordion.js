@@ -1,22 +1,46 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
+import PropTypes from "prop-types"
 
-const Accordion = ({ title, children }) => {
-  const [active, setActive] = useState("")
+const Accordion = ({ title, children, name, setActive, expand }) => {
+  const [height, setHeight] = useState(expand ? "200" : "0")
+
+  const content = useRef(null)
+
+  useEffect(() => {
+    setHeight(expand ? content.current.scrollHeight : "0")
+  }, [expand])
 
   const toggleAccordion = () => {
-    setActive(active === "" ? "active" : "")
+    if (expand) return
+    setActive(expand ? "" : name)
+    setHeight(expand ? content.current.scrollHeight : "0")
   }
 
   return (
-    <div className="accordion-section" onClick={toggleAccordion}>
-      <button className={`accordion ${active}`} onClick={toggleAccordion}>
+    <div className="accordion-section">
+      <button
+        className={expand ? "accordion active" : "accordion"}
+        onClick={toggleAccordion}
+      >
         <p className="accordion-title">{title}</p>
       </button>
-      <div className="accordion-content">
+      <div
+        className={expand ? "accordion-content" : "accordion-content"}
+        ref={content}
+        style={{ maxHeight: `${height}px` }}
+      >
         <p className="accordion-text">{children}</p>
       </div>
     </div>
   )
+}
+
+Accordion.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
+  expand: PropTypes.bool.isRequired,
 }
 
 export default Accordion
