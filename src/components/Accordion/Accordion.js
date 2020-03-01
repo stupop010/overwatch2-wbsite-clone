@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react"
 import PropTypes from "prop-types"
 
-const Accordion = ({ title, children, name, setActive, expand }) => {
+const Accordion = ({ title, children, name, setActive, expand, dispatch }) => {
   const [height, setHeight] = useState(expand ? "200" : "0")
 
   const content = useRef(null)
@@ -12,6 +12,7 @@ const Accordion = ({ title, children, name, setActive, expand }) => {
 
   const toggleAccordion = () => {
     if (expand) return
+    dispatch({ type: name })
     setActive(expand ? "" : name)
     setHeight(expand ? content.current.scrollHeight : "0")
   }

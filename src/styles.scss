@@ -454,6 +454,7 @@ img {
   p {
     line-height: 1.3;
     letter-spacing: 1px;
+    overflow: scroll;
   }
 }
 
@@ -508,6 +509,19 @@ img {
   font-weight: 400;
   font-size: 1rem;
   padding: 1.1rem 0;
+}
+
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  // background-color: red;
+  .slider {
+    height: 100%;
+    display: flex;
+  }
 }
 
 @keyframes scrollOut {
