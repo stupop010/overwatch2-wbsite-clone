@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import has from "lodash.has"
 import ExploreButton from "./ExploreButton"
-import enemy from "../../images/menu-bot-main-LG.png"
+import enemy from "../../static/images/menu-bot-main-LG.png"
 
 const Enemy = ({ setDarken, darken }) => {
   const ifDarken = has(darken, "enemy")

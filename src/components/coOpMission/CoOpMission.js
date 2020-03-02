@@ -9,8 +9,8 @@ import {
 } from "../Carousel/CarouselSideData"
 
 const CoOpMission = () => {
-  const [state, dispatch] = useReducer(carouselReducer, CoOpMissionsStory())
   const [active, setActive] = useState("story")
+  const [state, dispatch] = useReducer(carouselReducer, CoOpMissionsStory())
 
   return (
     <div className="co-op-grid">

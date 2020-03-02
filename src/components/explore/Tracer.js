@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import has from "lodash.has"
 
-import tracer from "../../images/menu-hero-tracer-LG.png"
-import tracerFx from "../../images/menu-hero-tracer-fx-LG.png"
+import tracer from "../../static/images/menu-hero-tracer-LG.png"
+import tracerFx from "../../static/images/menu-hero-tracer-fx-LG.png"
 import "../../styles.scss"
 import ExploreButton from "./ExploreButton"
 

@@ -23,7 +23,8 @@ const Accordion = ({ title, children, name, setActive, expand, dispatch }) => {
         className={expand ? "accordion active" : "accordion"}
         onClick={toggleAccordion}
       >
-        <p className="accordion-title">{title}</p>
+        {title}
+        {/* <p className="accordion-title">{title}</p> */}
       </button>
       <div
         className={expand ? "accordion-content" : "accordion-content"}

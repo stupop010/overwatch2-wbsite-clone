@@ -1,8 +1,8 @@
 import React from "react"
-import bgSky from "../../images/menu-bg-sky-LG.jpg"
-import bgCoast from "../../images/menu-bg-coast-LG.png"
-import bgGround from "../../images/menu-bg-ground-LG.png"
-import bgShip from "../../images/menu-bg-ship-LG.png"
+import bgSky from "../../static/images/menu-bg-sky-LG.jpg"
+import bgCoast from "../../static/images/menu-bg-coast-LG.png"
+import bgGround from "../../static/images/menu-bg-ground-LG.png"
+import bgShip from "../../static/images/menu-bg-ship-LG.png"
 
 const ExploreBackground = () => {
   return (
