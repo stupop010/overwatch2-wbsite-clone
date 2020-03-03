@@ -1,3 +1,3 @@
-import CoOpMissions from "../components/co-op-mission"
+import CoOpMissions from "../components/CoOpMission/index"
 
 export default CoOpMissions
