@@ -44,4 +44,4 @@ Tracer.propTypes = {
   darken: PropTypes.object.isRequired,
 }
 
-export default TracerImg
+export default Tracer
