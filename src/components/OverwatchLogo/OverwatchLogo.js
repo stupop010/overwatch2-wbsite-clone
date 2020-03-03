@@ -1,6 +1,6 @@
 import React from "react"
 
-const OverwatchLogo = ({ title, whiteLogo, color }) => {
+const OverWatchLogo = ({ title, whiteLogo, color }) => {
   return (
     <>
       <a href="/trailer" className="logo">
@@ -72,4 +72,4 @@ const OverwatchLogo = ({ title, whiteLogo, color }) => {
   )
 }
 
-export default OverwatchLogo
+export default OverWatchLogo

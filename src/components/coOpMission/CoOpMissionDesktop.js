@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from "react"
 import { Link } from "gatsby"
-import OverwatchLogo from "../OverwatchLogo"
+import OverWatchLogo from "../OverWatchLogo/index"
 import Accordion from "../Accordion"
 import Carousel from "../Carousel"
 
@@ -16,7 +16,7 @@ const CoOpMissionDesktop = () => {
     <div className="co-op-grid">
       <div className="do">
         <div className="overwatch-logo co-op-logo">
-          <OverwatchLogo title="Co-op missions" />
+          <OverWatchLogo title="Co-op missions" />
         </div>
         <div className="co-op-content">
           <h1>POWER UP AND SAVE THE WORLD</h1>
