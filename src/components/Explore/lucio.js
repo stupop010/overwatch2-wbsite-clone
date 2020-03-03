@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import has from "lodash.has"
-import ExploreButton from "./explore-button"
+import ExploreButton from "./ExploreButton"
 import lucio from "../../static/images/menu-hero-lucio-LG.png"
 import lucioFx from "../../static/images/menu-hero-lucio-fx-LG.png"
 
-const LucioImg = ({ darken, setDarken }) => {
+const Lucio = ({ darken, setDarken }) => {
   const ifDarken = has(darken, "lucio")
 
   return (
@@ -35,9 +35,9 @@ const LucioImg = ({ darken, setDarken }) => {
   )
 }
 
-LucioImg.propTypes = {
+Lucio.propTypes = {
   darken: PropTypes.object.isRequired,
   setDarken: PropTypes.func.isRequired,
 }
 
-export default LucioImg
+export default Lucio

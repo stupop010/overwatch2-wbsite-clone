@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import has from "lodash.has"
-import ExploreButton from "./explore-button"
+import ExploreButton from "./ExploreButton"
 import enemy from "../../static/images/menu-bot-main-LG.png"
 
-const EnemyImg = ({ setDarken, darken }) => {
+const Enemy = ({ setDarken, darken }) => {
   const ifDarken = has(darken, "enemy")
 
   return (
@@ -32,9 +32,9 @@ const EnemyImg = ({ setDarken, darken }) => {
   )
 }
 
-EnemyImg.propTypes = {
+Enemy.propTypes = {
   setDarken: PropTypes.func.isRequired,
   darken: PropTypes.object.isRequired,
 }
 
-export default EnemyImg
+export default Enemy
