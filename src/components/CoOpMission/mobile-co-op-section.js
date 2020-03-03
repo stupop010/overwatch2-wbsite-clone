@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import MobileCarousel from "../mobile-carousel"
+import MobileCarousel from "../MobileCarousel"
 import CarouselDots from "../carousel/carousel-dots"
 
 const MobileCoOpSection = ({ title, content, images }) => {

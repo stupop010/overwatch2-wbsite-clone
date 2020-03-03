@@ -1,6 +1,6 @@
 import React from "react"
 
-import OverwatchLogo from "../overwatch-logo"
+import OverwatchLogo from "../OverwatchLogo"
 
 const NavOverlay = ({ whiteLogo, color, title }) => {
   return (

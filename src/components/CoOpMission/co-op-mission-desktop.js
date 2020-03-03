@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from "react"
 import { Link } from "gatsby"
-import OverWatchLogo from "../overwatch-logo"
-import Accordion from "../accordion/index.js"
+import OverWatchLogo from "../OverwatchLogo"
+import Accordion from "../Accordion/index.js"
 import Carousel from "../carousel/index.js"
 
 import {
