@@ -97,7 +97,7 @@ img {
   }
 }
 
-.explore-nav-overlay {
+.nav-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -122,8 +122,7 @@ img {
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
-  border-left: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+  border-left: 1px solid;
 }
 
 .logo {
@@ -157,13 +156,9 @@ img {
         font-size: 1rem;
         font-weight: 400;
         text-transform: uppercase;
-        color: white;
         width: 24rem;
-        animation: menuScroll 0.7s;
+        animation: menuScroll 0.3s;
       }
-    }
-    svg {
-      fill: white;
     }
   }
 }
@@ -444,7 +439,42 @@ img {
     line-height: 1;
   }
   .co-op-accordion {
-    padding: 0.7rem;
+    padding: 0.7rem 0;
+  }
+}
+
+.co-op-mobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+  .co-op-btn {
+    padding: 0.2rem 1rem;
+    margin: auto;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.02);
+    }
+    span {
+      margin-right: 1rem;
+      padding-bottom: 0.2rem;
+    }
+  }
+}
+
+.co-op-mobile-title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6rem;
+  background-color: #f6f6f6;
+  h1 {
+    font-size: 1.6rem;
   }
 }
 
@@ -520,6 +550,44 @@ img {
     display: flex;
   }
 }
+
+.back-btn {
+  z-index: 2;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background: white;
+  border-radius: 50%;
+  transition: scale 0.3s;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+    transform: scale(1.05);
+    &::after {
+      content: "back to menu";
+      position: absolute;
+      top: 30%;
+      right: -350%;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      width: 24rem;
+      animation: backBtnScroll 0.3s;
+    }
+  }
+  &::before {
+    content: "-";
+    font-size: 5rem;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .carousel-background {
   display: flex;
   justify-content: center;
@@ -574,8 +642,151 @@ img {
   }
 }
 
-.dot-active {
+.dot-black-active {
+  background: black;
+}
+
+.dot-black {
+  border: 2px solid black;
+}
+
+.dot-white-active {
   background: white;
+}
+
+.dot-white {
+  border: 2px solid white;
+}
+
+.mobile-section {
+  width: 100%;
+  padding-bottom: 1rem;
+  .section-title {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    font-weight: bolder;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .section-content {
+    width: 70%;
+    margin: auto;
+    line-height: 1.4;
+  }
+}
+
+.mobile-carousel {
+  position: relative;
+  min-height: 25rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+  div {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2rem;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba($color: #1b1b1b, $alpha: 0.6);
+  }
+}
+
+.whats-next-show {
+  // width: 1480px;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.menu-next-inner {
+  width: 1280px;
+  min-height: 1000px;
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100%;
+  height: 100%;
+}
+
+.whats-next-bg {
+  // position: relative;
+  top: -35%;
+}
+
+.rein-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: -4%;
+  right: -19%;
+}
+
+.tracer-wrapper {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -37%;
+  left: -3%;
+}
+
+.mei-wrapper {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -41%;
+  left: 51%;
+}
+
+.brig-wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -70%;
+  right: 2%;
+}
+
+.genji-wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -76%;
+  left: 70%;
+}
+
+.winston-wrapper {
+  position: relative;
+}
+
+.winston {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+@keyframes backBtnScroll {
+  0% {
+    right: -800%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    right: -350%;
+    opacity: 1;
+  }
 }
 
 @keyframes scrollOut {
@@ -609,6 +820,11 @@ img {
   }
   .section {
     height: 100vh;
+  }
+  .mobile-carousel {
+    div {
+      font-size: 1rem;
+    }
   }
 }
 

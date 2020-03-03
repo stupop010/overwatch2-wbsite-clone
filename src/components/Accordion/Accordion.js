@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 const Accordion = ({ title, children, name, setActive, expand, dispatch }) => {
   const [height, setHeight] = useState(expand ? "200" : "0")
+  const [width, setWidth] = useState("")
 
   const content = useRef(null)
 

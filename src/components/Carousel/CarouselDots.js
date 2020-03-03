@@ -4,14 +4,19 @@ const CarouselDots = ({
   imageSetLength,
   setCurrentImageIndex,
   currentImageIndex,
+  dotsColor,
 }) => {
   const buttons = []
-  console.log(currentImageIndex)
 
   for (let i = 0; i < imageSetLength; i++) {
     buttons.push(
       <button
-        className={currentImageIndex === i ? "dot dot-active" : "dot"}
+        key={i}
+        className={
+          currentImageIndex === i
+            ? `dot dot-${dotsColor}-active dot-${dotsColor}`
+            : `dot dot-${dotsColor}`
+        }
         onClick={() => setCurrentImageIndex(i)}
       ></button>
     )

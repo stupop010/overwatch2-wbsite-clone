@@ -19,6 +19,7 @@ const SliderImg = ({
           imageSetLength={imageSetLength}
           setCurrentImageIndex={setCurrentImageIndex}
           currentImageIndex={currentImageIndex}
+          dotsColor="white"
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react"
 
-const OverwatchLogo = ({ title, children, whiteLogo }) => {
+const OverwatchLogo = ({ title, whiteLogo, color }) => {
   return (
     <>
       <a href="/trailer" className="logo">
@@ -65,7 +65,9 @@ const OverwatchLogo = ({ title, children, whiteLogo }) => {
           </svg>
         )}
       </a>
-      <div className="title">{title}</div>
+      <div className="title" style={{ borderColor: color }}>
+        {title}
+      </div>
     </>
   )
 }

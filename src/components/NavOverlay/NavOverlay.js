@@ -1,20 +1,22 @@
 import React from "react"
+
 import OverwatchLogo from "../overwatchLogo"
 
-const ExploreNavOverlay = () => {
+const NavOverlay = ({ whiteLogo, color, title }) => {
   return (
-    <div className="explore-nav-overlay">
+    <div className="nav-overlay" style={{ color }}>
       <div className="overwatch-logo">
-        <OverwatchLogo title="explore" whiteLogo />
+        <OverwatchLogo title={title} whiteLogo={whiteLogo} color={color} />
       </div>
       <div className="overwatch-menu">
-        <a href="https://playoverwatch.com/en-gb/">
+        <a href="https://playoverwatch.com/en-gb/" style={{ color }}>
           <svg
             class="OW1Link-icon-svg"
             xmlns="http://www.w3.org/2000/svg"
             width="50"
             height="30"
             viewBox="0 0 50 30"
+            fill={color}
           >
             <path
               fillRule="evenodd"
@@ -31,4 +33,4 @@ const ExploreNavOverlay = () => {
   )
 }
 
-export default ExploreNavOverlay
+export default NavOverlay

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExploreBackground from "../components/Explore/ExploreBackground"
 import ExploreOverlay from "../components/Explore/ExploreOverlay"
-import ExploreNavOverlay from "../components/Explore/ExploreNavOverlay"
+import NavOverlay from "../components/NavOverlay"
 import Tracer from "../components/Explore/Tracer"
 import Enemy from "../components/Explore/Enemy"
 import Lucio from "../components/Explore/Lucio"
@@ -15,7 +15,7 @@ const ExplorePage = () => {
 
   useEffect(() => {
     const parallax = document.getElementById("parallax")
-    const parallaxInstance = new Parallax(parallax)
+    new Parallax(parallax)
   }, [])
 
   return (
@@ -61,7 +61,7 @@ const ExplorePage = () => {
               </div>
             </div>
             <ExploreOverlay />
-            <ExploreNavOverlay />
+            <NavOverlay whiteLogo={true} color="white" title="explore" />
           </main>
         </div>
       </div>
