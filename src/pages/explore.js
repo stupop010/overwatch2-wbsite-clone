@@ -6,9 +6,9 @@ import SEO from "../components/seo"
 import ExploreBackground from "../components/Explore/ExploreBackgroundImg"
 import ExploreOverlay from "../components/Explore/ExploreOverlay"
 import NavOverlay from "../components/NavOverlay/index"
-import TracerImg from "../components/Explore/Tracer"
-import EnemyImg from "../components/Explore/Enemy"
-import LucioImg from "../components/Explore/Lucio"
+// import TracerImg from "../components/Explore/Tracer"
+// import EnemyImg from "../components/Explore/Enemy"
+// import LucioImg from "../components/Explore/Lucio"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})
@@ -41,9 +41,9 @@ const ExplorePage = () => {
                     }
                   ></div>
                   <ExploreBackground />
-                  <TracerImg setDarken={setDarken} darken={darken} />
+                  {/* <TracerImg setDarken={setDarken} darken={darken} />
                   <EnemyImg setDarken={setDarken} darken={darken} />
-                  <LucioImg setDarken={setDarken} darken={darken} />
+                  <LucioImg setDarken={setDarken} darken={darken} /> */}
                   <div
                     style={{
                       position: "absolute",
