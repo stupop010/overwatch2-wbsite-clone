@@ -3,12 +3,12 @@ import Parallax from "parallax-js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExploreBackground from "../components/Explore/ExploreBackground"
-import ExploreOverlay from "../components/Explore/ExploreOverlay"
+import ExploreBackground from "../components/Explore/ExploreBackgroundImg"
+import ExploreOverlay from "../components/Explore/ExploreOverlayInfo"
 import NavOverlay from "../components/NavOverlay"
-import Tracer from "../components/Explore/Tracer"
-import Enemy from "../components/Explore/Enemy"
-import Lucio from "../components/Explore/Lucio"
+import TracerImg from "../components/Explore/TracerImg"
+import EnemyImg from "../components/Explore/EnemyImg"
+import LucioImg from "../components/Explore/LucioImg"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})
@@ -41,9 +41,9 @@ const ExplorePage = () => {
                     }
                   ></div>
                   <ExploreBackground />
-                  <Tracer setDarken={setDarken} darken={darken} />
-                  <Enemy setDarken={setDarken} darken={darken} />
-                  <Lucio setDarken={setDarken} darken={darken} />
+                  <TracerImg setDarken={setDarken} darken={darken} />
+                  <EnemyImg setDarken={setDarken} darken={darken} />
+                  <LucioImg setDarken={setDarken} darken={darken} />
                   <div
                     style={{
                       position: "absolute",

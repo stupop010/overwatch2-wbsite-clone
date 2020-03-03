@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from "react"
 import { Link } from "gatsby"
-import OverWatchLogo from "../OverWatchLogo/index"
+import OverWatchLogo from "../OverwatchLogo/index"
 import Accordion from "../Accordion"
 import Carousel from "../Carousel"
 

@@ -1,2 +1,2 @@
-import CoOpMission from "./CoOpMission"
-export default CoOpMission
+import CoOpMissions from "./CoOpMissions"
+export default CoOpMissions
