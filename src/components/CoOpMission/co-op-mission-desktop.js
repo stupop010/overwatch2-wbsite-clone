@@ -2,12 +2,12 @@ import React, { useState, useReducer } from "react"
 import { Link } from "gatsby"
 import OverWatchLogo from "../OverwatchLogo"
 import Accordion from "../Accordion/index.js"
-import Carousel from "../carousel/index.js"
+import Carousel from "../Carousel/index.js"
 
 import {
   carouselReducer,
   CoOpMissionsStory,
-} from "../carousel/carouselSideData"
+} from "../Carousel/carouselSideData"
 
 const CoOpMissionDesktop = () => {
   const [active, setActive] = useState("story")
