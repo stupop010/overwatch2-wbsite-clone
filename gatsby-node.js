@@ -4,7 +4,7 @@ exports.createPages = ({ actions }) => {
   const { createPage } = actions
   createPage({
     path: "/explore/co-op-missions",
-    component: path.resolve("./src/templates/co-op-mission-template.js"),
+    component: path.resolve("./src/templates/CoOpMissionTemplate.js"),
     context: {},
   })
 }
