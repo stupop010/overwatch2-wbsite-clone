@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import MobileCarousel from "../mobileCarousel"
-import CarouselDots from "../carousel/CarouselDots"
+import CarouselDots from "../carousel/carouselDots"
 
 const MobileCoOpSection = ({ title, content, images }) => {
   const [currentImageIndex, setcurrentImageIndex] = useState(0)

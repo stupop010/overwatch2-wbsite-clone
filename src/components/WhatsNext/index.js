@@ -1,2 +1,2 @@
-import WhatNext from "./WhatNext"
+import WhatNext from "./whatNext"
 export default WhatNext

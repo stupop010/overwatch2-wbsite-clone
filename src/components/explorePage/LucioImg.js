@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import has from "lodash.has"
-import ExploreButton from "./ExploreButton"
+import ExploreButton from "./exploreButton"
 import lucio from "../../static/images/menu-hero-lucio-LG.png"
 import lucioFx from "../../static/images/menu-hero-lucio-fx-LG.png"
 

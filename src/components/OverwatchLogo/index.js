@@ -1,2 +1,2 @@
-import OverWatchLogo from "./OverwatchLogo"
+import OverWatchLogo from "./overwatchLogo"
 export default OverWatchLogo

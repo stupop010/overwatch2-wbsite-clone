@@ -1,7 +1,7 @@
 import React from "react"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
-import CoOpMissionDesktop from "./CoOpMissionDesktop"
-import CoOpMissionMobile from "./CoOpMissionMobile"
+import CoOpMissionDesktop from "./coOpMissionDesktop"
+import CoOpMissionMobile from "./coOpMissionMobile"
 
 const CoOpMissions = () => {
   const { width } = useWindowDimensions()

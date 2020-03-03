@@ -1,2 +1,2 @@
-import MobileCarousel from "./MobileCarousel"
+import MobileCarousel from "./mobileCarousel"
 export default MobileCarousel

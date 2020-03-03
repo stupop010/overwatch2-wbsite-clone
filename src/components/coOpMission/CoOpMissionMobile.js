@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-import MobileCoOpSection from "./MobileCoOpSection"
+import MobileCoOpSection from "./mobileCoOpSection"
 
 import {
   CoOpMissionsStory,
   CoOpMissionsHero,
   CoOpMissionsFactions,
-} from "../carousel/CarouselSideData"
+} from "../carousel/carouselSideData"
 
 const CoOpMissionMobile = () => {
   return (

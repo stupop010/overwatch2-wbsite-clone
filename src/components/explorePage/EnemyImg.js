@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import has from "lodash.has"
-import ExploreButton from "./ExploreButton"
+import ExploreButton from "./exploreButton"
 import enemy from "../../static/images/menu-bot-main-LG.png"
 
 const EnemyImg = ({ setDarken, darken }) => {

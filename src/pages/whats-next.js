@@ -2,8 +2,8 @@ import React, { useEffect } from "react"
 import Parallax from "parallax-js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExploreNavOverlay from "../components/NavOverlay"
-import WhatsNext from "../components/WhatsNext"
+import ExploreNavOverlay from "../components/navOverlay"
+import WhatsNext from "../components/whatsNext"
 
 const ExplorePage = () => {
   useEffect(() => {

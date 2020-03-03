@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import CarouselDots from "./CarouselDots"
+import React from "react"
+import CarouselDots from "./carouselDots"
 
 const SliderImg = ({
   img,

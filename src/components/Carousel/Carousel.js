@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import SliderImg from "./SliderImg"
-import Arrow from "./Arrow"
+import SliderImg from "./sliderImg"
+import Arrow from "./arrow"
 
 const Carousel = ({ imageSet }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)

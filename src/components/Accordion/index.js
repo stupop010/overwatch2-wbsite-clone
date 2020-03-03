@@ -1,2 +1,2 @@
-import Accordion from "./Accordion"
+import Accordion from "./accordion"
 export default Accordion
