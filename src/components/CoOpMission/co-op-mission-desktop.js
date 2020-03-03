@@ -7,7 +7,7 @@ import Carousel from "../Carousel/index.js"
 import {
   carouselReducer,
   CoOpMissionsStory,
-} from "../Carousel/carouselSideData"
+} from "../Carousel/CarouselSideData"
 
 const CoOpMissionDesktop = () => {
   const [active, setActive] = useState("story")

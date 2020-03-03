@@ -6,7 +6,7 @@ import {
   CoOpMissionsStory,
   CoOpMissionsHero,
   CoOpMissionsFactions,
-} from "../Carousel/carouselSideData"
+} from "../Carousel/CarouselSideData"
 
 const CoOpMissionMobile = () => {
   return (
