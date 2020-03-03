@@ -1,4 +1,4 @@
-import CoOpMission from "../components/CoOpMission"
+import CoOpMission from "../components/CoOpMission/index"
 
 export default CoOpMission
 
