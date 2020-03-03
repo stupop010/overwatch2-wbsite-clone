@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import SliderImg from "./sliderImg"
+import SliderImg from "./slider-img"
 import Arrow from "./arrow"
 
 const Carousel = ({ imageSet }) => {
