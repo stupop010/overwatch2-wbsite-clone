@@ -8,7 +8,7 @@ import tracerFx from "../../static/images/menu-hero-tracer-fx-LG.png"
 import "../../styles.scss"
 import ExploreButton from "./ExploreButton"
 
-const TracerImg = ({ darken, setDarken }) => {
+const Tracer = ({ darken, setDarken }) => {
   const ifDarken = has(darken, "tracer")
 
   return (
@@ -39,7 +39,7 @@ const TracerImg = ({ darken, setDarken }) => {
   )
 }
 
-TracerImg.propTypes = {
+Tracer.propTypes = {
   setDarken: PropTypes.func.isRequired,
   darken: PropTypes.object.isRequired,
 }
