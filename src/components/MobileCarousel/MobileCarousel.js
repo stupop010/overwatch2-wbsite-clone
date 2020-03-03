@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 const MobileCarousel = ({ image, currentImageIndex }) => {
   const currentImage = image[currentImageIndex]

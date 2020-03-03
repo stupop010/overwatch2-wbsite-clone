@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import PropTypes from "prop-types"
+import PropTypes from "./node_modules/prop-types"
 
 const Accordion = ({ title, children, name, setActive, expand, dispatch }) => {
   const [height, setHeight] = useState(expand ? "200" : "0")

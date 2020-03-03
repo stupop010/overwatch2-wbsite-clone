@@ -3,12 +3,12 @@ import Parallax from "parallax-js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExploreBackground from "../components/ExplorePage/ExploreBackgroundImg"
-import ExploreOverlay from "../components/ExplorePage/ExploreOverlayInfo"
+import ExploreBackground from "../components/explorePage/ExploreBackgroundImg"
+import ExploreOverlay from "../components/explorePage/ExploreOverlayInfo"
 import NavOverlay from "../components/NavOverlay"
-import TracerImg from "../components/ExplorePage/TracerImg"
-import EnemyImg from "../components/ExplorePage/EnemyImg"
-import LucioImg from "../components/ExplorePage/LucioImg"
+import TracerImg from "../components/explorePage/TracerImg"
+import EnemyImg from "../components/explorePage/EnemyImg"
+import LucioImg from "../components/explorePage/LucioImg"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})
