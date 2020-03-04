@@ -1,15 +1,15 @@
 import React from "react"
-import Winston from "./winston"
-import Rein from "./rein"
-import Tracer from "./tracer"
-import Mei from "./mei"
-import Brig from "./brig"
-import Genji from "./genji"
+import Winston from "./Winston"
+import Rein from "./Rein"
+import Tracer from "./Tracer"
+import Mei from "./Mei"
+import Brig from "./Brig"
+import Genji from "./Genji"
+import Echo from "./Echo"
+import Mercy from "./Mercy"
+import OverlayText from "./OverlayText"
 import WhatNextBg from "../../static/images/whats-next-bg-lg.jpg"
 import WhatNextfront from "../../static/images/whats-next-fx-front-xl.png"
-import WhatNextEcho from "../../static/images/whats-next-hero-echo-md.png"
-
-import WhatNextMercy from "../../static/images/whats-next-hero-mercy-md.png"
 
 const WhatNext = () => (
   <>
@@ -18,12 +18,15 @@ const WhatNext = () => (
         <img src={WhatNextBg} />
       </div>
     </div>
+    <Echo />
+    <Mercy />
+    <Winston />
     <Rein />
     <Brig />
     <Genji />
     <Tracer />
     <Mei />
-    <Winston />
+    <OverlayText />
   </>
 )
 

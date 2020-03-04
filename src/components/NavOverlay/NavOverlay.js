@@ -2,7 +2,7 @@ import React from "react"
 
 import OverwatchLogo from "../OverwatchLogo"
 
-const NavOverlay = ({ whiteLogo, color, title }) => {
+const NavOverlay = ({ whiteLogo, color, title, children }) => {
   return (
     <div className="nav-overlay" style={{ color }}>
       <div className="overwatch-logo">
@@ -25,10 +25,7 @@ const NavOverlay = ({ whiteLogo, color, title }) => {
           </svg>
         </a>
       </div>
-      <div className="overwatch-story">
-        <h4>story</h4>
-        <p>></p>
-      </div>
+      {children}
     </div>
   )
 }

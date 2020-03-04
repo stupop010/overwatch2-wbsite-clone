@@ -1,5 +1,5 @@
 import React from "react"
-import CarouselDots from "./carousel-dots"
+import CarouselDots from "./CarouselDots"
 
 const SliderImg = ({
   img,

@@ -1,2 +1,2 @@
-import NavOverlay from "./nav-overlay"
+import NavOverlay from "./NavOverlay"
 export default NavOverlay

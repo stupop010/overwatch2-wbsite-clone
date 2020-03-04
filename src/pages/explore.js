@@ -7,6 +7,7 @@ import ExploreBackground from "../components/Explore/ExploreBackgroundImg"
 import ExploreOverlay from "../components/Explore/ExploreOverlay"
 import NavOverlay from "../components/NavOverlay/index"
 import ExploreHeros from "../components/Explore/ExploreHeros"
+import ScrollPageLink from "../components/NavOverlay/StoryLink"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})
@@ -40,24 +41,13 @@ const ExplorePage = () => {
                   ></div>
                   <ExploreBackground />
                   <ExploreHeros setDarken={setDarken} darken={darken} />
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      height: "100%",
-                      width: "100%",
-                      pointerEvents: "none",
-                    }}
-                    className={
-                      Object.keys(darken).length > 0 ? "bg-darken" : null
-                    }
-                  ></div>
                 </div>
               </div>
             </div>
             <ExploreOverlay />
-            <NavOverlay whiteLogo={true} color="white" title="explore" />
+            <NavOverlay whiteLogo={true} color="white" title="explore">
+              <ScrollPageLink text="story"></ScrollPageLink>
+            </NavOverlay>
           </main>
         </div>
       </div>
