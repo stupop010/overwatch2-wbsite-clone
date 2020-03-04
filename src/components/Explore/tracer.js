@@ -5,10 +5,9 @@ import has from "lodash.has"
 
 import tracer from "../../static/images/menu-hero-tracer-LG.png"
 import tracerFx from "../../static/images/menu-hero-tracer-fx-LG.png"
-import "../../styles.scss"
 import ExploreButton from "./ExploreButton"
 
-const Tracer = ({ darken, setDarken }) => {
+const TracerImg = ({ darken, setDarken }) => {
   const ifDarken = has(darken, "tracer")
 
   return (
@@ -39,9 +38,9 @@ const Tracer = ({ darken, setDarken }) => {
   )
 }
 
-Tracer.propTypes = {
+TracerImg.propTypes = {
   setDarken: PropTypes.func.isRequired,
   darken: PropTypes.object.isRequired,
 }
 
-export default Tracer
+export default TracerImg

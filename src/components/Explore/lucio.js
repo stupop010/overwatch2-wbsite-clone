@@ -5,7 +5,7 @@ import ExploreButton from "./ExploreButton"
 import lucio from "../../static/images/menu-hero-lucio-LG.png"
 import lucioFx from "../../static/images/menu-hero-lucio-fx-LG.png"
 
-const Lucio = ({ darken, setDarken }) => {
+const LucioImg = ({ darken, setDarken }) => {
   const ifDarken = has(darken, "lucio")
 
   return (
@@ -35,9 +35,9 @@ const Lucio = ({ darken, setDarken }) => {
   )
 }
 
-Lucio.propTypes = {
+LucioImg.propTypes = {
   darken: PropTypes.object.isRequired,
   setDarken: PropTypes.func.isRequired,
 }
 
-export default Lucio
+export default LucioImg

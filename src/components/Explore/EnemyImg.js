@@ -5,7 +5,7 @@ import has from "lodash.has"
 import ExploreButton from "./ExploreButton"
 import enemy from "../../static/images/menu-bot-main-LG.png"
 
-const Enemy = ({ setDarken, darken }) => {
+const EnemyImg = ({ setDarken, darken }) => {
   const ifDarken = has(darken, "enemy")
 
   return (
@@ -32,9 +32,9 @@ const Enemy = ({ setDarken, darken }) => {
   )
 }
 
-Enemy.propTypes = {
+EnemyImg.propTypes = {
   setDarken: PropTypes.func.isRequired,
   darken: PropTypes.object.isRequired,
 }
 
-export default Enemy
+export default EnemyImg

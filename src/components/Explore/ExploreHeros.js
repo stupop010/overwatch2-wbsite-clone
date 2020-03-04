@@ -1,13 +1,13 @@
 import React from "react"
-import Tracer from "./Tracer"
-import Enemy from "./Enemy"
-import Lucio from "./Lucio"
+import TracerImg from "./Tracer"
+import EnemyImg from "./Enemy"
+import LucioImg from "./Lucio"
 
 const ExploreHeros = ({ setDarken, darken }) => (
   <>
-    <Tracer setDarken={setDarken} darken={darken} />
-    <Enemy setDarken={setDarken} darken={darken} />
-    <Lucio setDarken={setDarken} darken={darken} />
+    <TracerImg setDarken={setDarken} darken={darken} />
+    <EnemyImg setDarken={setDarken} darken={darken} />
+    <LucioImg setDarken={setDarken} darken={darken} />
   </>
 )
 
