@@ -1,7 +1,7 @@
 import React from "react"
-import TracerImg from "./Tracer"
-import EnemyImg from "./Enemy"
-import LucioImg from "./Lucio"
+import TracerImg from "./TracerImg"
+import EnemyImg from "./EnemyImg"
+import LucioImg from "./LucioImg"
 
 const ExploreHeros = ({ setDarken, darken }) => (
   <>
