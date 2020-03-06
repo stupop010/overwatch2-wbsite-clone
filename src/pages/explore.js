@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Parallax from "parallax-js"
 
+import useWindowDimensions from "../hooks/useWindowDimensions"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExploreBackground from "../components/Explore/ExploreBackgroundImg"
@@ -8,9 +9,11 @@ import ExploreOverlay from "../components/Explore/ExploreOverlay"
 import NavOverlay from "../components/NavOverlay/index"
 import ExploreHeros from "../components/Explore/ExploreHeros"
 import ScrollPageLink from "../components/NavOverlay/StoryLink"
+import MobileCards from "../components/Explore/MobileCards"
 
 const ExplorePage = () => {
   const [darken, setDarken] = useState({})
+  const { width } = useWindowDimensions()
 
   useEffect(() => {
     const parallax = document.getElementById("parallax")
@@ -44,6 +47,7 @@ const ExplorePage = () => {
                 </div>
               </div>
             </div>
+            {width < 960 ? <MobileCards /> : null}
             <ExploreOverlay />
             <NavOverlay whiteLogo={true} color="white" title="explore">
               <ScrollPageLink text="story"></ScrollPageLink>

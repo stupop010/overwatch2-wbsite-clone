@@ -10,23 +10,21 @@ const EnemyImg = ({ setDarken, darken }) => {
 
   return (
     <div className={ifDarken ? "enemy bright" : "enemy"} data-depth="0.2">
-      <div style={{ width: "21%" }}>
-        <div className="enemy-bot">
-          <img src={enemy} />
-          <Link
-            to="/explore/co-op-missions"
-            className="explore-link"
-            onPointerEnter={() => setDarken({ ["enemy"]: true })}
-            onPointerLeave={() => setDarken({})}
-            name="enemy"
-          >
-            <ExploreButton
-              text="co-op missions"
-              ifDarken={ifDarken}
-              className="enemy-btn"
-            />
-          </Link>
-        </div>
+      <div className="enemy-bot">
+        <img src={enemy} />
+        <Link
+          to="/explore/co-op-missions"
+          className="explore-link"
+          onPointerEnter={() => setDarken({ ["enemy"]: true })}
+          onPointerLeave={() => setDarken({})}
+          name="enemy"
+        >
+          <ExploreButton
+            text="co-op missions"
+            ifDarken={ifDarken}
+            className="enemy-btn"
+          />
+        </Link>
       </div>
     </div>
   )

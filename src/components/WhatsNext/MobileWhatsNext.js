@@ -14,7 +14,6 @@ const MobileWhatsNext = () => {
       }
     }
   `)
-  console.log(file)
   return (
     <div className="whats-next-mobile">
       <h1>YOUR MISSION CONTINUES</h1>
