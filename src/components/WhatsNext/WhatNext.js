@@ -7,7 +7,7 @@ import Brig from "./Brig"
 import Genji from "./Genji"
 import Echo from "./Echo"
 import Mercy from "./Mercy"
-import OverlayText from "./OverlayText"
+
 import WhatNextBg from "../../static/images/whats-next-bg-lg.jpg"
 import WhatNextfront from "../../static/images/whats-next-fx-front-xl.png"
 
@@ -26,7 +26,6 @@ const WhatNext = () => (
     <Genji />
     <Tracer />
     <Mei />
-    <OverlayText />
   </>
 )
 

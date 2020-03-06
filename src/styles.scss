@@ -705,10 +705,8 @@ img {
   overflow: hidden;
 }
 
-.menu-next-inner {
-  width: 1280px;
-  min-height: 1000px;
-  overflow: hidden;
+.whats-next-inner {
+  display: none;
 }
 
 .full-width {
@@ -794,76 +792,58 @@ img {
   right: 10%;
 }
 
-.overlay-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  pointer-events: none;
-  .overlay-flex {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(
-      to top,
-      rgba(14, 13, 13, 0.2) rgba(250, 250, 250, 0.1)
-    );
-    .overlay-content {
-      padding-top: 8rem;
-      display: flex;
-      justify-content: center;
-      h2 {
-        max-width: 18rem;
-        font-weight: 600;
-        font-size: 1.8rem;
-        text-align: end;
-        padding: 0 2rem;
-      }
-      .overlay-info {
-        max-width: 20rem;
-        padding: 0 0.3rem;
-        word-wrap: normal;
-        h3 {
-          line-height: 1.2;
-          word-spacing: 0.2rem;
-        }
-        p {
-          padding-top: 0.2rem;
-          word-spacing: 0.1rem;
-          line-height: 1.4;
-        }
-      }
+.overlay-text-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 0.8rem;
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 0.4rem 0;
+    max-width: 30rem;
+    font-size: 1.2rem;
+    color: rgba($color: #1b1b1b, $alpha: 0.8);
+  }
+  .buy-btn {
+    pointer-events: all;
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background: #e26136;
+    transition: transform 0.3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
     }
   }
+}
 
-  .overlay-text-call {
-    padding-bottom: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+.overlay-container {
+  text-align: center;
+  padding: 0 1rem;
+  h2 {
+    padding: 0.2rem 0;
+  }
+  .overlay-info {
+    padding: 0.4rem 0;
     h3 {
-      font-size: 2.3rem;
+      padding: 0.2rem 0;
     }
     p {
-      margin: 1rem 0;
-      max-width: 30rem;
-      font-size: 1.5rem;
+      color: rgba($color: #1b1b1b, $alpha: 0.8);
     }
-    .buy-btn {
-      pointer-events: all;
-      padding: 0.4rem 1rem;
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      background: #e26136;
-      transition: transform 0.3s;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.02);
-      }
-    }
+  }
+}
+
+.whats-next-mobile {
+  padding-top: 6rem;
+  h1 {
+    position: absolute;
   }
 }
 
@@ -918,8 +898,68 @@ img {
       font-size: 1rem;
     }
   }
-}
+  .whats-next-inner {
+    display: block;
+  }
 
+  .whats-next-mobile {
+    display: none;
+  }
+
+  .overlay-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    .overlay-flex {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .overlay-content {
+        padding-top: 8rem;
+        display: flex;
+        justify-content: center;
+        h2 {
+          max-width: 18rem;
+          font-weight: 600;
+          font-size: 1.8rem;
+          text-align: end;
+          padding: 0 2rem;
+        }
+        .overlay-info {
+          max-width: 20rem;
+          padding: 0 0.3rem;
+          word-wrap: normal;
+          h3 {
+            line-height: 1.2;
+            word-spacing: 0.2rem;
+          }
+          p {
+            padding-top: 0.2rem;
+            word-spacing: 0.1rem;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-text-call {
+    color: white;
+    h3 {
+      font-size: 2.3rem;
+    }
+    p {
+      color: white;
+      margin: 1rem 0;
+      max-width: 30rem;
+      font-size: 1.5rem;
+    }
+  }
+}
 @media (min-width: 1280px) {
   .menu-bg-show {
     width: 1800px;
