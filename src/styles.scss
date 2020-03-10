@@ -33,6 +33,7 @@ img {
 .menu-bg-show {
   width: 1480px;
   height: 1150px;
+  height: 100%;
 }
 
 .menu-bg-inner,
@@ -857,7 +858,7 @@ img {
     display: flex;
     width: 100%;
     margin: 0.5rem 0;
-    background: red;
+    background: #f2eef1;
     border: 1px solid white;
   }
   .card-img {
